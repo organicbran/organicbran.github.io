@@ -15,30 +15,58 @@ body
 
 #hero
 {
-    width: 28em;
-    height: 18em;
+    width: 500px;
+    height: 300px;
     filter: grayscale(100%);
     object-fit: cover;
     object-position: 0 75%;
-    border-radius: 50pt;
-    margin: 24pt;
+    border-radius: 50px;
+    margin: 30px;
 }
 
 #icon
 {
-    width: 8em;
-    margin-top: 40pt;
+    width: 120px;
+    margin-top: 50px;
 }
 
 #title
 {
-    font-size: 1.5em;
+    font-size: 18pt;
     font-weight: 800;
 }
 
 .link
 {
-    margin-top: 5pt;
-    font-size: 1.2em;
+    margin-top: 5px;
+    font-size: 14pt;
     font-weight: 400;
+}
+
+@media screen and (max-width: 600px)
+{
+    #hero
+    {
+        width: 90%;
+        margin: 60px;
+    }
+
+    #icon
+    {
+        width: 240px;
+        margin-top: 100px;
+    }
+
+    #title
+    {
+        font-size: 36pt;
+        font-weight: 800;
+    }
+
+    .link
+    {
+        margin-top: 10px;
+        font-size: 28pt;
+        font-weight: 400;
+    }
 }
