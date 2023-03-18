@@ -15,8 +15,8 @@ body
 
 #hero
 {
-    width: 360pt;
-    height: 240pt;
+    width: 28em;
+    height: 18em;
     filter: grayscale(100%);
     object-fit: cover;
     object-position: 0 75%;
@@ -26,19 +26,19 @@ body
 
 #icon
 {
-    width: 90pt;
+    width: 8em;
     margin-top: 40pt;
 }
 
 #title
 {
-    font-size: 18pt;
+    font-size: 1.5em;
     font-weight: 800;
 }
 
 .link
 {
     margin-top: 5pt;
-    font-size: 14pt;
+    font-size: 1.2em;
     font-weight: 400;
 }
