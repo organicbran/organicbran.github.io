@@ -43,7 +43,7 @@ body
     font-weight: 400;
 }
 
-@media screen and (max-width: 500pt)
+@media screen and (min-device-width: 450px)
 {
     #hero
     {
