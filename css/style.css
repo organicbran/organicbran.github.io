@@ -15,19 +15,19 @@ body
 
 #hero
 {
-    width: 500px;
-    height: 300px;
+    width: 360pt;
+    height: 240pt;
     filter: grayscale(100%);
     object-fit: cover;
     object-position: 0 75%;
-    border-radius: 50px;
-    margin: 30px;
+    border-radius: 50pt;
+    margin: 24pt;
 }
 
 #icon
 {
-    width: 120px;
-    margin-top: 50px;
+    width: 90pt;
+    margin-top: 40pt;
 }
 
 #title
@@ -38,7 +38,7 @@ body
 
 .link
 {
-    margin-top: 5px;
+    margin-top: 5pt;
     font-size: 14pt;
     font-weight: 400;
 }
