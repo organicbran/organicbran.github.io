@@ -43,11 +43,12 @@ body
     font-weight: 400;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 500pt)
 {
     #hero
     {
         width: 90%;
+        height: 55%;
         margin: 60px;
     }
 
