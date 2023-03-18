@@ -1,0 +1,18 @@
+body
+{
+    background: #f6b93b;
+    font-family: 'Martian Mono', monospace;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24pt;
+}
+
+img
+{
+    width: 400px;
+    filter: grayscale(100%);
+}
