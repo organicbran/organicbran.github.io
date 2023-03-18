@@ -2,17 +2,43 @@ body
 {
     background: #f6b93b;
     font-family: 'Martian Mono', monospace;
-    text-align: center;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24pt;
+    padding: 0;
 }
 
-img
+#main
 {
-    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero
+{
+    width: 500px;
+    height: 300px;
     filter: grayscale(100%);
+    object-fit: cover;
+    object-position: 0 75%;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+#icon
+{
+    width: 120px;
+    margin-top: 50px;
+}
+
+#title
+{
+    font-size: 18pt;
+    font-weight: 800;
+}
+
+.link
+{
+    margin-top: 5px;
+    font-size: 14pt;
+    font-weight: 400;
 }
