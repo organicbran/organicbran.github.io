@@ -17,11 +17,11 @@ body
 {
     width: 500px;
     height: 300px;
+    margin: 30px;
     filter: grayscale(100%);
     object-fit: cover;
     object-position: 0 75%;
     border-radius: 50px;
-    margin: 30px;
 }
 
 #icon
@@ -43,31 +43,29 @@ body
     font-weight: 400;
 }
 
-@media screen and (min-device-width: 450px)
+@media screen and (max-device-width: 450px)
 {
     #hero
     {
-        width: 90%;
-        height: 55%;
-        margin: 60px;
+        width: 1000px;
+        height: 1000px;
+        margin: 80px;
     }
 
     #icon
     {
-        width: 240px;
-        margin-top: 100px;
+        width: 400px;
+        margin-top: 120px;
     }
 
     #title
     {
-        font-size: 36pt;
-        font-weight: 800;
+        font-size: 48pt;
     }
 
     .link
     {
         margin-top: 10px;
-        font-size: 28pt;
-        font-weight: 400;
+        font-size: 40pt;
     }
 }
