@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'Peachi';
+    src: url('fonts/peachibold.woff2') format('woff2');
+}
+
 body
 {
     background: #feca57;
@@ -8,13 +14,17 @@ body
 
 #bar
 {
+    background: #feca57;
+    position: sticky;
+    z-index: 1;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #icon
@@ -22,67 +32,123 @@ body
     width: 60px;
 }
 
+#links
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
 a
 {
     color: #000000;
-    margin: 10px;
-    font-size: 11pt;
     font-weight: 300;
     text-decoration: none;
+    font-size: 11pt;
 }
 
 a:hover
 {
-    color: #f6b93b;
+    color: #ffffff;
 }
 
 a:active
 {
-    color: #fa983a;
+    color: #ff9f43;
 }
 
 #main
 {
-    padding-left: 20%;
-    padding-right: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 110px;
 }
 
 #hero
 {
-    width: 800px;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    width: 750px;
 }
 
 #title
 {
-    font-size: 28pt;
-    font-weight: 800;
+    font-family: 'Peachi';
+    font-size: 36pt;
 }
 
 #sub
 {
+    font-weight: 400;
     font-size: 14pt;
-    font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #sub2
 {
-    font-size: 12pt;
     font-weight: 300;
-    text-align: center;
+    font-size: 12pt;
+}
+
+.block
+{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 25px;
+}
+
+.block-title
+{
+    font-family: 'Peachi', serif;
+    color: #ffffff;
+    font-size: 28pt;
+}
+
+.block-sub
+{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 10pt;
+    margin-bottom: -10px;
+}
+
+.copy
+{
+    color: #ffffff;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+#panel-1
+{
+    background: #f13c4b;
+    border-radius: 50px;
+    padding: 30px;
+    height: 200px;
+}
+
+#panel-2
+{
+    background: #3fad37;
+    border-radius: 50px;
+    padding: 30px;
+    height: 200px;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
 }
 
 @media screen and (max-device-width: 450px)
 {
     #bar
     {
-        padding: 20px;
+        padding: 30px;
+        margin-right: 10px;
     }
 
     #icon
@@ -90,44 +156,95 @@ a:active
         width: 160px;
     }
 
+    #links
+    {
+        gap: 40px;
+    }
+
     a
     {
-        color: #000000;
-        margin: 20px;
         font-size: 24pt;
-        font-weight: 300;
     }
 
     #main
     {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0;
+        margin-top: 300px;
+        margin-bottom: 60px;
     }
 
     #hero
     {
-        width: 1000px;
-        margin-top: 280px;
-        margin-bottom: 4px;
+        width: 100%;
+        margin-bottom: 0px;
     }
 
     #title
     {
-        font-size: 60pt;
+        font-size: 72pt;
     }
 
     #sub
     {
-        font-size: 32pt;
-        font-weight: 500;
-        margin-bottom: 340px;
+        font-size: 28pt;
+        margin-bottom: 450px;
     }
 
     #sub2
     {
-        font-size: 28pt;
-        font-weight: 300;
+        font-size: 24pt;
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    .block
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .block-title
+    {
+        font-family: 'Peachi', serif;
+        color: #ffffff;
+        font-size: 60pt;
+    }
+
+    .block-sub
+    {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 20pt;
+        margin-bottom: -10px;
+    }
+
+    .copy
+    {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 24pt;
+        margin-top: 30px;
+    }
+
+    #panel-1
+    {
+        background: #f13c4b;
+        border-radius: 100px;
+        padding: 60px;
+        padding-right: 200px;
+        padding-bottom: 200px;
+    }
+
+    #panel-2
+    {
+        background: #3fad37;
+        border-radius: 100px;
+        padding: 60px;
+        padding-left: 200px;
+        padding-bottom: 200px;
+        margin-right: 0;
+        margin-left: auto;
+        text-align: right;
     }
 }
