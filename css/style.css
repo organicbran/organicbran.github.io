@@ -49,6 +49,7 @@ a:active
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #hero
@@ -86,7 +87,7 @@ a:active
 
     #icon
     {
-        width: 120px;
+        width: 160px;
     }
 
     a
@@ -105,26 +106,27 @@ a:active
 
     #hero
     {
-        width: 900px;
         margin-top: 30px;
         margin-bottom: 60px;
     }
 
     #title
     {
-        font-size: 56pt;
+        font-size: 60pt;
     }
 
     #sub
     {
-        font-size: 28pt;
+        font-size: 32pt;
         font-weight: 500;
         margin-bottom: 60px;
     }
 
     #sub2
     {
-        font-size: 24pt;
+        font-size: 28pt;
         font-weight: 300;
+        margin-left: 60px;
+        margin-right: 60px;
     }
 }
