@@ -107,8 +107,8 @@ a:active
     #hero
     {
         width: 1000px;
-        margin-top: 240px;
-        margin-bottom: 60px;
+        margin-top: 260px;
+        margin-bottom: 4px;
     }
 
     #title
@@ -120,7 +120,7 @@ a:active
     {
         font-size: 32pt;
         font-weight: 500;
-        margin-bottom: 300px;
+        margin-bottom: 320px;
     }
 
     #sub2
