@@ -78,7 +78,7 @@ a:active
     text-align: center;
 }
 
-@media screen and (min-device-width: 450px)
+@media screen and (max-device-width: 450px)
 {
     #bar
     {
