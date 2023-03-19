@@ -78,7 +78,7 @@ a:active
     text-align: center;
 }
 
-@media screen and (max-device-width: 450px)
+@media screen and (min-device-width: 450px)
 {
     #bar
     {
@@ -107,8 +107,8 @@ a:active
     #hero
     {
         width: 1000px;
-        margin-top: 270px;
-        margin-bottom: 300px;
+        margin-top: 240px;
+        margin-bottom: 60px;
     }
 
     #title
@@ -120,7 +120,7 @@ a:active
     {
         font-size: 32pt;
         font-weight: 500;
-        margin-bottom: 60px;
+        margin-bottom: 300px;
     }
 
     #sub2
