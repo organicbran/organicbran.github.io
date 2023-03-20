@@ -161,8 +161,8 @@ a:active
 {
     position: absolute;
     width: 300px;
-    padding-left: 230px;
-    padding-top: 10px;
+    margin-left: 230px;
+    margin-top: 10px;
 }
 
 #chunk-1
@@ -199,8 +199,8 @@ a:active
 {
     position: absolute;
     width: 350px;
-    padding-right: 180px;
-    padding-top: 10px;
+    margin-right: 180px;
+    margin-top: 10px;
 }
 
 @media screen and (max-device-width: 450px)
@@ -295,8 +295,8 @@ a:active
     #panel-1-image
     {
         width: 450px;
-        padding-left: 450px;
-        padding-top: 30px;
+        margin-left: 450px;
+        margin-top: 30px;
     }
 
     #panel-2
@@ -314,7 +314,7 @@ a:active
     #panel-2-image
     {
         width: 500px;
-        padding-right: 400px;
-        padding-top: 60px;
+        margin-right: 400px;
+        margin-top: 60px;
     }
 }
