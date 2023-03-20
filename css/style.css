@@ -1,3 +1,13 @@
+:root
+{
+    --white: #ffffff;
+    --black: #000000;
+    --yellow: #feca57;
+    --orange: #ff9f43;
+    --red: #ff3838;
+    --green: #44bd32;
+}
+
 @font-face
 {
     font-family: 'Peachi';
@@ -6,7 +16,7 @@
 
 body
 {
-    background: #feca57;
+    background: var(--yellow);
     font-family: 'Martian Mono', monospace;
     margin: 0;
     padding: 0;
@@ -14,7 +24,7 @@ body
 
 #bar
 {
-    background: #feca57;
+    background: var(--yellow);
     position: sticky;
     z-index: 1;
     top: 0;
@@ -41,7 +51,7 @@ body
 
 a
 {
-    color: #000000;
+    color: var(--black);
     font-weight: 300;
     text-decoration: none;
     font-size: 11pt;
@@ -49,12 +59,12 @@ a
 
 a:hover
 {
-    color: #ffffff;
+    color: var(--white);
 }
 
 a:active
 {
-    color: #ff9f43;
+    color: var(--orange);
 }
 
 #main
@@ -68,7 +78,7 @@ a:active
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
 }
 
 #hero
@@ -97,50 +107,89 @@ a:active
 
 .block
 {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 65px;
 }
 
-.block-title
+.panel-title
 {
     font-family: 'Peachi', serif;
-    color: #ffffff;
+    color: var(--white);
     font-size: 28pt;
 }
 
-.block-sub
+.panel-sub
 {
-    color: #ffffff;
+    color: var(--white);
     font-weight: 300;
     font-size: 10pt;
     margin-bottom: -10px;
 }
 
-.copy
+.panel-copy
 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 12pt;
-    margin-top: 10px;
+    width: 200px;
 }
 
 #panel-1
 {
-    background: #f13c4b;
+    background: var(--red);
+    display: flex;
+    justify-content: space-between;
     border-radius: 50px;
-    padding: 30px;
-    height: 200px;
+    height: 250px;
+    width: 475px;
+}
+
+#panel-1-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 30px;
+}
+
+#panel-1-image
+{
+    position: absolute;
+    width: 300px;
+    padding-left: 230px;
+    padding-top: 10px;
 }
 
 #panel-2
 {
-    background: #3fad37;
-    border-radius: 50px;
-    padding: 30px;
-    height: 200px;
-    margin-right: 0;
-    margin-left: auto;
+    background: var(--green);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
     text-align: right;
+    border-radius: 50px;
+    height: 250px;
+    width: 475px;
+}
+
+#panel-2-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 30px;
+}
+
+#panel-2-image
+{
+    position: absolute;
+    width: 350px;
+    padding-right: 180px;
+    padding-top: 10px;
 }
 
 @media screen and (max-device-width: 450px)
@@ -169,7 +218,7 @@ a:active
     {
         padding: 0;
         margin-top: 260px;
-        margin-bottom: 0px;
+        margin-bottom: 100px;
     }
 
     #hero
@@ -198,52 +247,63 @@ a:active
 
     .block
     {
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-bottom: 50px;
+        margin-left: 60px;
+        margin-right: 60px;
+        gap: 100px;
     }
 
-    .block-title
+    .panel-title
     {
-        font-family: 'Peachi', serif;
-        color: #ffffff;
-        font-size: 60pt;
+        font-size: 56pt;
     }
 
-    .block-sub
+    .panel-sub
     {
-        color: #ffffff;
-        font-weight: 300;
         font-size: 20pt;
         margin-bottom: -20px;
     }
 
-    .copy
+    .panel-copy
     {
-        color: #ffffff;
-        font-weight: 400;
         font-size: 24pt;
-        margin-top: 30px;
+        width: 400px;
     }
 
     #panel-1
     {
-        background: #f13c4b;
         border-radius: 100px;
-        padding: 60px;
-        padding-right: 200px;
-        padding-bottom: 200px;
+        height: 400px;
+        width: 100%;
+    }
+
+    #panel-1-text
+    {
+        margin: 60px;
+    }
+
+    #panel-1-image
+    {
+        width: 450px;
+        padding-left: 450px;
+        padding-top: 30px;
     }
 
     #panel-2
     {
-        background: #3fad37;
         border-radius: 100px;
-        padding: 60px;
-        padding-left: 200px;
-        padding-bottom: 200px;
-        margin-right: 0;
-        margin-left: auto;
-        text-align: right;
+        height: 400px;
+        width: 100%;
+    }
+
+    #panel-2-text
+    {
+        margin: 60px;
+    }
+
+    #panel-2-image
+    {
+        width: 500px;
+        padding-right: 400px;
+        padding-top: 60px;
     }
 }
