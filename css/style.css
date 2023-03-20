@@ -136,7 +136,7 @@ a:active
     color: var(--white);
     font-weight: 400;
     font-size: 12pt;
-    width: 200px;
+    width: 210px;
 }
 
 #panel-1
@@ -163,6 +163,16 @@ a:active
     width: 300px;
     padding-left: 230px;
     padding-top: 10px;
+}
+
+#chunk-1
+{
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    height: 350px;
+    width: 700px;
 }
 
 #panel-2
