@@ -194,14 +194,14 @@ body
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 80px;
-    gap: 30px;
+    gap: 40px;
 }
 
 .chunk-detail
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     gap: 40px;
 }
@@ -213,6 +213,11 @@ body
     border-radius: 2px;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.detail-text
+{
+    margin-top: 20px;
 }
 
 .detail-title
