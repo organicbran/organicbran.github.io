@@ -11,7 +11,8 @@
 @font-face
 {
     font-family: 'Peachi';
-    src: url('fonts/peachibold.woff2') format('woff2');
+    src: url('fonts/Peachi-Bold.woff2') format('woff2');
+    font-display: swap;
 }
 
 body
@@ -88,7 +89,7 @@ a:active
 
 #title
 {
-    font-family: 'Peachi';
+    font-family: 'Peachi', serif;
     font-size: 36pt;
 }
 
