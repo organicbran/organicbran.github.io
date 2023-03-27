@@ -442,7 +442,7 @@ body
 
     .section-sub
     {
-        font-size: 26pt;
+        font-size: 24pt;
         margin-bottom: -20px;
     }
 
@@ -566,7 +566,7 @@ body
     {
         position: absolute;
         width: 500px;
-        margin-left: 420px;
+        margin-left: 410px;
         margin-top: 130px;
     }
 
@@ -581,8 +581,8 @@ body
 
     .panel-copy
     {
-        font-size: 24pt;
-        width: 400px;
+        font-size: 26pt;
+        width: 350px;
     }
 
     #panel-2
