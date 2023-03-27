@@ -254,8 +254,9 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px;
-    border-radius: 100px;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .block-text-alt
@@ -360,7 +361,7 @@ body
 {
     border-top: var(--black) dotted;
     width: 100px;
-    border-width: 8px;
+    border-width: 12px;
 }
 
 #spacer
@@ -370,12 +371,9 @@ body
 
 #footer
 {
-    background: var(--purple);
-    color: var(--white);
     text-align: center;
     font-weight: 300;
     font-size: 12pt;
-    margin-top: 50px;
     padding: 50px;
 }
 
@@ -398,7 +396,7 @@ body
 
     .bar-link
     {
-        font-size: 22pt;
+        font-size: 26pt;
     }
 
     #intro
@@ -410,7 +408,7 @@ body
     #hero
     {
         width: 100%;
-        margin-top: 250px;
+        margin-top: 255px;
     }
 
     #title
@@ -426,7 +424,7 @@ body
         padding-bottom: 8px;
         padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 450px;
+        margin-bottom: 440px;
     }
 
     #sub2
@@ -444,7 +442,7 @@ body
 
     .section-sub
     {
-        font-size: 24pt;
+        font-size: 26pt;
         margin-bottom: -20px;
     }
 
@@ -499,7 +497,8 @@ body
 
     .detail-copy
     {
-        font-size: 28pt;
+        font-weight: 400;
+        font-size: 26pt;
         width: 750px;
         margin-top: 10px;
     }
@@ -523,12 +522,10 @@ body
 
     #block-2
     {
-        width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
-        border-radius: 0px;
         padding-top: 100px;
         padding-bottom: 100px;
+        left: 0;
+        right: 0;
     }
 
     .block-text-alt
@@ -606,8 +603,8 @@ body
 
     .line
     {
-        width: 200px;
-        border-width: 16px;
+        width: 0px;
+        border-width: 0px;
     }
 
     #spacer
@@ -618,7 +615,6 @@ body
     #footer
     {
         font-size: 24pt;
-        margin-top: 100px;
         padding: 100px;
     }
 }
