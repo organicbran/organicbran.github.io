@@ -4,7 +4,7 @@
     --black: #000000;
     --gray: #777777;
     --yellow: #f6b93b;
-    --purple: #4834d4;
+    --orange: #fa983a;
     --red: #ff3838;
     --green: #44bd32;
 }
@@ -46,11 +46,28 @@ body
     padding-right: 20%;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
+}
+
+#bar.dark
+{
+    background: var(--black);
 }
 
 #icon
 {
     width: 50px;
+
+    transition: filter 0.5s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: -webkit-filter 0.5s cubic-bezier(.4,.2,.6,.8);
+}
+
+#icon.dark
+{
+    filter: invert(1);
+    -webkit-filter: invert(1);
 }
 
 #links
@@ -66,6 +83,9 @@ body
     font-weight: 400;
     text-decoration: none;
     font-size: 11pt;
+
+    transition: color 0.5s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: color 0.5s cubic-bezier(.4,.2,.6,.8);
 }
 
 .bar-link:hover
@@ -75,7 +95,22 @@ body
 
 .bar-link:active
 {
-    color: var(--purple);
+    color: var(--orange);
+}
+
+.bar-link.dark
+{
+    color: var(--white);
+}
+
+.bar-link.dark:hover
+{
+    color: var(--yellow);
+}
+
+.bar-link.dark:active
+{
+    color: var(--orange);
 }
 
 #intro
@@ -218,7 +253,7 @@ body
 
 .detail-title:active
 {
-    background: var(--purple);
+    background: var(--orange);
 }
 
 .detail-copy
@@ -359,9 +394,10 @@ body
 
 .line
 {
-    border-top: var(--black) dotted;
-    width: 100px;
-    border-width: 12px;
+    background: var(--black);
+    border-radius: 4px;
+    width: 120px;
+    height: 8px;
 }
 
 #spacer
@@ -524,7 +560,7 @@ body
     {
         padding-top: 100px;
         padding-bottom: 100px;
-        box-sizing: border-box;
+        border: var(--black) solid 1px;
     }
 
     .block-text-alt
@@ -587,7 +623,7 @@ body
         border-radius: 100px;
         height: 500px;
         width: 90%;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
     }
 
     #panel-2-image
@@ -600,8 +636,9 @@ body
 
     .line
     {
-        width: 0px;
-        border-width: 0px;
+        border-radius: 8px;
+        width: 240px;
+        height: 16px;
     }
 
     #spacer
