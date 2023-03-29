@@ -549,6 +549,7 @@ body
 
     .detail-copy
     {
+        font-weight: 400;
         font-size: 28pt;
         width: 750px;
         margin-top: 10px;
