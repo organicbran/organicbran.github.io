@@ -459,12 +459,12 @@ body
 
     #title
     {
-        font-size: 76pt;
+        font-size: 78pt;
     }
 
     #sub
     {
-        font-size: 26pt;
+        font-size: 28pt;
         border-radius: 10px;
         padding-top: 8px;
         padding-bottom: 8px;
@@ -476,7 +476,7 @@ body
     #sub2
     {
         font-weight: 300;
-        font-size: 24pt;
+        font-size: 26pt;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -484,6 +484,8 @@ body
     .section
     {
         gap: 100px;
+        margin-left: -1px;
+        margin-right: -1px;
     }
 
     .section-alt
@@ -546,7 +548,6 @@ body
 
     .detail-copy
     {
-        font-weight: 400;
         font-size: 28pt;
         width: 750px;
         margin-top: 10px;
