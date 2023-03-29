@@ -47,8 +47,8 @@ body
     padding-top: 10px;
     padding-bottom: 10px;
 
-    transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
+    transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
 }
 
 #bar.dark
@@ -60,8 +60,8 @@ body
 {
     width: 50px;
 
-    transition: filter 0.4s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: -webkit-filter 0.4s cubic-bezier(.4,.2,.6,.8);
+    transition: filter 0.25s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: -webkit-filter 0.25s cubic-bezier(.4,.2,.6,.8);
 }
 
 #icon.dark
@@ -84,18 +84,13 @@ body
     text-decoration: none;
     font-size: 11pt;
 
-    transition: color 0.4s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: color 0.4s cubic-bezier(.4,.2,.6,.8);
+    transition: color 0.25s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: color 0.25s cubic-bezier(.4,.2,.6,.8);
 }
 
 .bar-link:hover
 {
     color: var(--white);
-}
-
-.bar-link:active
-{
-    color: var(--orange);
 }
 
 .bar-link.dark
@@ -106,11 +101,6 @@ body
 .bar-link.dark:hover
 {
     color: var(--yellow);
-}
-
-.bar-link.dark:active
-{
-    color: var(--orange);
 }
 
 #intro
@@ -250,16 +240,14 @@ body
     border-radius: 5px;
     padding-left: 6px;
     padding-right: 6px;
+
+    transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
 }
 
 .detail-title:hover
 {
     background: var(--white);
-}
-
-.detail-title:active
-{
-    background: var(--orange);
 }
 
 .detail-copy
@@ -443,7 +431,7 @@ body
 
     .bar-link
     {
-        font-size: 24pt;
+        font-size: 25pt;
     }
 
     #intro
@@ -476,7 +464,6 @@ body
 
     #sub2
     {
-        font-weight: 300;
         font-size: 26pt;
         margin-left: 100px;
         margin-right: 100px;
@@ -614,7 +601,6 @@ body
 
     #panel-1-image
     {
-        position: absolute;
         width: 500px;
         margin-left: 415px;
         margin-top: 135px;
@@ -622,9 +608,6 @@ body
 
     .panel-text
     {
-        color: var(--white);
-        display: flex;
-        flex-direction: column;
         margin: 60px;
         margin-bottom: 0px;
     }
@@ -645,7 +628,6 @@ body
 
     #panel-2-image
     {
-        position: absolute;
         width: 550px;
         margin-right: 370px;
         margin-top: 150px;
