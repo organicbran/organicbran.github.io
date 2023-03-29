@@ -338,6 +338,7 @@ body
     border-radius: 50px;
     height: 250px;
     width: 475px;
+    margin-bottom: 25px;
 }
 
 #panel-1-image
@@ -608,14 +609,15 @@ body
         border-radius: 100px;
         height: 500px;
         width: 90%;
+        margin-bottom: 50px;
     }
 
     #panel-1-image
     {
         position: absolute;
         width: 500px;
-        margin-left: 410px;
-        margin-top: 130px;
+        margin-left: 415px;
+        margin-top: 135px;
     }
 
     .panel-text
