@@ -485,8 +485,8 @@ body
     .section
     {
         gap: 100px;
-        margin-left: -1px;
-        margin-right: -1px;
+        margin-left: -10px;
+        margin-right: -10px;
         overflow-x: hidden;
     }
 
