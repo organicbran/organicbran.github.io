@@ -454,12 +454,12 @@ body
     #hero
     {
         width: 100%;
-        margin-top: 255px;
+        margin-top: 260px;
     }
 
     #title
     {
-        font-size: 78pt;
+        font-size: 80pt;
     }
 
     #sub
@@ -470,7 +470,7 @@ body
         padding-bottom: 8px;
         padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 440px;
+        margin-bottom: 425px;
     }
 
     #sub2
@@ -486,6 +486,7 @@ body
         gap: 100px;
         margin-left: -1px;
         margin-right: -1px;
+        overflow-x: hidden;
     }
 
     .section-alt
