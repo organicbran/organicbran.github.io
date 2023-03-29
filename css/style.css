@@ -522,20 +522,18 @@ body
     .list-detail
     {
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
     }
 
     .list-detail-alt
     {
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
     }
 
     .detail-text
     {
-        color: var(--black);
-        text-align: left;
-        margin-top: 30px;
+        margin: 0px;
     }
 
     .detail-title
