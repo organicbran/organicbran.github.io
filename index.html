@@ -14,7 +14,7 @@
             function scrollFunction() {
                 let switchPoint = 2210;
                 if (getComputedStyle(document.getElementById("bar")).getPropertyValue("padding-top") == "20px") {
-                    switchPoint = 5900;
+                    switchPoint = 5910;
                 }
                 if (document.body.scrollTop > switchPoint || document.documentElement.scrollTop > switchPoint) {
                     document.getElementById("bar").classList.add("dark")
