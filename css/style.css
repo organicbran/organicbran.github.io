@@ -472,6 +472,8 @@ body
     .section
     {
         gap: 100px;
+        padding-right: 10px;
+        overflow-x: hidden;
     }
 
     .section-alt
