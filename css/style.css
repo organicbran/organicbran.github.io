@@ -417,6 +417,8 @@ body
     #bar
     {
         padding: 20px;
+        margin-right: -1px;
+        overflow-x: hidden;
     }
 
     #icon
