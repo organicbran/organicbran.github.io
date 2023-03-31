@@ -365,26 +365,6 @@ body
     width: 210px;
 }
 
-#panel-2
-{
-    background: var(--green);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    border-radius: 50px;
-    height: 250px;
-    width: 475px;
-    margin-bottom: 25px;
-}
-
-#panel-2-image
-{
-    position: absolute;
-    width: 325px;
-    margin-right: 200px;
-    margin-top: 40px;
-}
-
 .line
 {
     background: var(--black);
@@ -417,6 +397,7 @@ body
     #bar
     {
         padding: 20px;
+        /* safari why */
         margin-right: -1px;
         overflow-x: hidden;
     }
@@ -474,6 +455,7 @@ body
     .section
     {
         gap: 100px;
+        /* safari why are you like this */
         margin-right: -1px;
         overflow-x: hidden;
     }
@@ -617,21 +599,6 @@ body
     {
         font-size: 26pt;
         width: 350px;
-    }
-
-    #panel-2
-    {
-        border-radius: 100px;
-        height: 500px;
-        width: 90%;
-        margin-bottom: 50px;
-    }
-
-    #panel-2-image
-    {
-        width: 550px;
-        margin-right: 370px;
-        margin-top: 150px;
     }
 
     .line
