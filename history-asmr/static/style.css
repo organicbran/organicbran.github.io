@@ -1,0 +1,282 @@
+:root
+{
+    --black: #100f0f;
+    --gray: #1e1d1d;
+    --gray-2: #5e5e5e;
+    --white: #f4f3ef;
+    --off-white: #ebe7e1;
+}
+
+body
+{
+    background-color: var(--black);
+    margin: 0px;
+}
+
+#main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#block-1
+{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+#block-1-left
+{
+    background-image: url(grain.png);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px;
+    padding-bottom: 160px;
+}
+
+#header
+{
+    background: linear-gradient(30deg, #FC466B, #3F5EFB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+#sub
+{
+    font-size: 20pt;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+#title
+{
+    font-size: 50pt;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -4px;
+    line-height: 55px;
+}
+
+.header-alt
+{
+    color: var(--gray-2);
+    margin-bottom: 20px;
+    opacity: 0.15;
+}
+
+#bar
+{
+    width: 175px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.bar-text
+{
+    color: var(--white);
+    font-size: 14pt;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    white-space: nowrap;
+}
+
+#bar-line
+{
+    width: 8px;
+    height: 8px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+#block-1-image
+{
+    width: 60%;
+    object-fit: cover;
+}
+
+#block-2
+{
+    width: 100vw;
+}
+
+#info
+{
+    background-color: var(--white);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 26.5vw;
+    padding-right: 26.5vw;
+    font-family: 'Manrope', sans-serif;
+}
+
+#info-title
+{
+    background: linear-gradient(30deg, #FC466B, #3F5EFB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30pt;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+#info-body
+{
+    color: var(--black);
+    font-size: 13pt;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.art-block-parent
+{
+    background-color: var(--white);
+    padding-bottom: 60px;
+}
+
+.art-block
+{
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: row;
+    margin-left: 13.5vw;
+    margin-right: 13.5vw;
+    margin-bottom: 40px;
+}
+
+.art-block-alt
+{
+    flex-direction: row-reverse;
+}
+
+.art-image
+{
+    width: 500px;
+    height: 520px;
+    object-fit: cover;
+}
+
+.warning
+{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14pt;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    margin: 80px;
+}
+
+.art-image-2
+{
+    width: 550px;
+    height: 520px;
+    object-fit: cover;
+}
+
+.video-container
+{
+    width: 450px;
+    height: 450px;
+}
+
+iframe
+{
+    width: 450px;
+    height: 450px;
+}
+
+.art-text
+{
+    font-family: 'Manrope', sans-serif;
+    padding: 30px;
+}
+
+.art-title
+{
+    background: linear-gradient(30deg, #333399, #ff00cc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24pt;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+.art-title-2
+{
+    background: linear-gradient(30deg, #ff6a00, #ee0979);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24pt;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+.art-title-3
+{
+    background: linear-gradient(30deg, #3a7bd5, #00d2ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24pt;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+.art-sub
+{
+    margin-top: 10px;
+    font-size: 15pt;
+    font-weight: 800;
+}
+
+.art-sub-2
+{
+    font-size: 14pt;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.art-body
+{
+    color: var(--black);
+    font-size: 13pt;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#footer
+{
+    background-color: var(--black);
+    padding: 60px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.citation
+{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    color: var(--off-white);
+    margin-bottom: 20px;
+}
+
+a
+{
+    color: var(--off-white);
+}
