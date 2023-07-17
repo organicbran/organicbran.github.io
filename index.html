@@ -9,30 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <script>
-            window.onscroll = function() {scrollFunction()};
-            function scrollFunction() {
-                let switchPoint = 2210;
-                if (getComputedStyle(document.getElementById("bar")).getPropertyValue("padding-top") == "20px") {
-                    switchPoint = 5940;
-                }
-                if (document.body.scrollTop > switchPoint || document.documentElement.scrollTop > switchPoint) {
-                    document.getElementById("bar").classList.add("dark")
-                    document.getElementById("icon").classList.add("dark");
-                    var links = document.getElementsByClassName("bar-link");
-                    for (var i = 0; i < links.length; i++) {
-                        links[i].classList.add("dark");
-                    }
-                } else {
-                    document.getElementById("bar").classList.remove("dark")
-                    document.getElementById("icon").classList.remove("dark");
-                    var links = document.getElementsByClassName("bar-link");
-                    for (var i = 0; i < links.length; i++) {
-                        links[i].classList.remove("dark");
-                    }
-                }
-            }
-        </script>
+        <script type="text/javascript" src="js/jayess.js"></script>
         <div id="bar">
             <a href="/">
                 <img id="icon" src="images/logosmall.png">
@@ -63,7 +40,7 @@
                         UNITY
                     </div>
                     <div class="section-title">
-                        personal projects
+                        game dev projects
                     </div>
                     <div class="block-copy">
                         programming, design, art, everything else
@@ -71,11 +48,11 @@
                 </div>
                 <div class="block-list">
                     <div class="list-detail">
-                        <img class="detail-image" src="images/cirrus1.png">
+                        <img class="detail-image" src="images/illwalkthanks1.png">
                         <div class="detail-text">
-                            <a class="detail-title" href="https://organicbran.itch.io/cirrus" target="_blank">cirrus</a>
+                            <a class="detail-title" href="https://organicbran.itch.io/ill-walk-thanks" target="_blank">i'll walk, thanks</a>
                             <div class="detail-copy">
-                                part action-platformer, part endless base-builder. defend your ship high above the clouds!
+                                a reverse-snake game about dodging public transit. made in under 48 hours for GMTK Game Jam 2023.
                             </div>
                         </div>
                     </div>
@@ -87,7 +64,25 @@
                         <div class="detail-text">
                             <a class="detail-title" href="https://organicbran.itch.io/ikeamon" target="_blank">ikeamon</a>
                             <div class="detail-copy">
-                                furniture assembly meets frenetic arena combat. grow close with your furniture! currently working on an expanded iOS version.
+                                furniture assembly meets frenetic arena combat. grow close with your furniture! expanded iOS version in development.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-detail">
+                        <img class="detail-image" src="images/cirrus1.png">
+                        <div class="detail-text">
+                            <a class="detail-title" href="https://organicbran.itch.io/cirrus" target="_blank">cirrus</a>
+                            <div class="detail-copy">
+                                part action-platformer, part endless base-builder. defend your ship high above the clouds!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-detail-alt">
+                        <img class="detail-image" src="images/smogcity1.png">
+                        <div class="detail-text">
+                            <a class="detail-title" href="https://organicbran.itch.io/smog-city" target="_blank">smog city</a>
+                            <div class="detail-copy">
+                                make decisions, protect your city from the smog, and get a good grade on your chemistry project.
                             </div>
                         </div>
                     </div>
@@ -96,7 +91,7 @@
                         <div class="detail-text">
                             <a class="detail-title" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">bryankart</a>
                             <div class="detail-copy">
-                                the greatest, most fastest kart racer ever made. coming soon (group project).
+                                the greatest group-project-kart-racer ever made. so good that it can't be released under advice of counsel.
                             </div>
                         </div>
                     </div>
