@@ -31,6 +31,9 @@ body
     font-family: 'Martian Mono', monospace;
     margin: 0;
     padding: 0;
+
+    transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
 }
 
 #bar
