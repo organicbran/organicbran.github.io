@@ -32,8 +32,8 @@ body
     margin: 0;
     padding: 0;
 
-    transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
+    transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
 }
 
 #bar
@@ -50,8 +50,8 @@ body
     padding-top: 10px;
     padding-bottom: 10px;
 
-    transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
+    transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
 }
 
 #bar.dark
@@ -63,8 +63,8 @@ body
 {
     width: 50px;
 
-    transition: filter 0.25s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: -webkit-filter 0.25s cubic-bezier(.4,.2,.6,.8);
+    transition: filter 0.2s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: -webkit-filter 0.2s cubic-bezier(.4,.2,.6,.8);
 }
 
 #icon.dark
@@ -77,6 +77,7 @@ body
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 25px;
 }
 
@@ -87,8 +88,26 @@ body
     text-decoration: none;
     font-size: 11pt;
 
-    transition: color 0.25s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: color 0.25s cubic-bezier(.4,.2,.6,.8);
+    transition: color 0.2s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: color 0.2s cubic-bezier(.4,.2,.6,.8);
+}
+
+.bar-link-fill
+{
+    background-color: var(--black);
+    color: var(--yellow);
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 11pt;
+
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    transition: all 0.2s cubic-bezier(.2,.4,.6,.8);
+    transition-property: color, background-color;
 }
 
 .bar-link:hover
@@ -96,14 +115,30 @@ body
     color: var(--white);
 }
 
+.bar-link-fill:hover
+{
+    background-color: var(--white);
+}
+
 .bar-link.dark
 {
     color: var(--white);
 }
 
+.bar-link-fill.dark
+{
+    background-color: var(--white);
+    color: var(--black);
+}
+
 .bar-link.dark:hover
 {
     color: var(--yellow);
+}
+
+.bar-link-fill.dark:hover
+{
+    background-color: var(--yellow);
 }
 
 #intro
@@ -135,11 +170,11 @@ body
     color: var(--yellow);
     font-weight: 400;
     font-size: 13pt;
-    border-radius: 5px;
+    border-radius: 30px;
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 125px;
 }
 
@@ -184,7 +219,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 900px;
 }
 
 .block-text
@@ -226,11 +261,16 @@ body
     gap: 15px;
 }
 
+.list-detail-extend
+{
+    margin-top: -15px;
+}
+
 .detail-text
 {
     color: var(--black);
     text-align: left;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .detail-title
@@ -245,8 +285,8 @@ body
     padding-left: 6px;
     padding-right: 6px;
 
-    transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
-    -webkit-transition: background-color 0.15s cubic-bezier(.4,.2,.6,.8);
+    transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
+    -webkit-transition: background-color 0.2s cubic-bezier(.4,.2,.6,.8);
 }
 
 .detail-title:hover
@@ -258,26 +298,29 @@ body
 {
     font-weight: 300;
     font-size: 12pt;
-    width: 250px;
-    margin-top: 5px;
+    width: 290px;
+    margin-top: 8px;
 }
 
 .detail-image
 {
-    width: 400px;
+    width: 450px;
     border-radius: 15px;
 }
 
 .detail-double-image
 {
+    width: 450px;
     display: flex;
     flex-direction: row;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .detail-image-vertical
 {
-    width: 195px;
+    width: 220px;
     border-radius: 15px;
 }
 
@@ -297,15 +340,18 @@ body
     flex-direction: column;
     align-items: start;
     text-align: left;
-    width: 800px;
+    width: 900px;
     margin-bottom: 25px;
 }
 
 .image-row
 {
+    width: 750px;
     display: flex;
     flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .block-image
@@ -401,6 +447,7 @@ body
     #bar
     {
         padding: 20px;
+        padding-right: 25px;
     }
 
     #icon
@@ -416,6 +463,16 @@ body
     .bar-link
     {
         font-size: 25pt;
+    }
+
+    .bar-link-fill
+    {
+        font-size: 25pt;
+        border-radius: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
 
     #intro
@@ -488,18 +545,18 @@ body
     .block-list
     {
         margin-top: 50px;
-        gap: 100px;
+        gap: 150px;
     }
 
     .list-detail
     {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 50px;
     }
 
     .list-detail-alt
     {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 50px;
     }
 
@@ -531,6 +588,7 @@ body
 
     .detail-double-image
     {
+        width: 100%;
         gap: 2.5%;
     }
 

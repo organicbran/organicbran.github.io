@@ -9,11 +9,19 @@ function scrollFunction() {
         for (var i = 0; i < links.length; i++) {
             links[i].classList.add("dark");
         }
+        var links = document.getElementsByClassName("bar-link-fill");
+        for (var i = 0; i < links.length; i++) {
+            links[i].classList.add("dark");
+        }
     } else {
         document.body.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--yellow');
         document.getElementById("bar").classList.remove("dark")
         document.getElementById("icon").classList.remove("dark");
         var links = document.getElementsByClassName("bar-link");
+        for (var i = 0; i < links.length; i++) {
+            links[i].classList.remove("dark");
+        }
+        var links = document.getElementsByClassName("bar-link-fill");
         for (var i = 0; i < links.length; i++) {
             links[i].classList.remove("dark");
         }
