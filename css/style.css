@@ -2,11 +2,9 @@
 {
     --white: #ffffff;
     --black: #18191a;
-    --gray: #777777;
+    --gray: #6a6a6e;
     --yellow: #f6b93b;
     --yellow2: #ffc444;
-    --red: #ff3838;
-    --green: #44bd32;
 }
 
 @font-face
@@ -557,8 +555,6 @@ body
 {
     #bar
     {
-        width: 100%;
-        max-width: 1100px;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 15px;
