@@ -37,7 +37,6 @@ body
 
 #bar-container
 {
-    height: 85px;
     width: 100%;
     background: var(--yellow);
     position: fixed;
@@ -72,7 +71,7 @@ body
 
 #icon
 {
-    width: 48px;
+    height: 62px;
 
     transition: filter 0.2s cubic-bezier(.4,.2,.6,.8);
     -webkit-transition: -webkit-filter 0.2s cubic-bezier(.4,.2,.6,.8);
@@ -555,15 +554,13 @@ body
 {
     #bar
     {
-        padding-top: 5px;
-        padding-bottom: 5px;
         padding-left: 15px;
         padding-right: 15px;
     }
 
     #icon
     {
-        width: 44px;
+        height: 58px;
     }
 
     #links
