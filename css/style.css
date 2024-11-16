@@ -365,6 +365,11 @@ body
     background: var(--white);
 }
 
+.detail-title-no-link:hover
+{
+    background: var(--black);
+}
+
 .detail-copy
 {
     font-weight: 300;
