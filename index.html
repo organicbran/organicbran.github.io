@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bryan Oh Chung | Portfolio</title>
+        <link rel="icon" type="image/png" href="images/icon.png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/epg2axk.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="d839169f-971b-49f0-a2df-1f19256586ef"></script>
+        <meta property="og:site_name" content="Bryan Oh Chung">
+        <meta property="og:title" content="Bryan Oh Chung | Portfolio">
+        <meta property="og:description" content="Hey! I'm Bryan—I'm a computer graphics student at the University of Pennsylvania, game developer, 3D artist/animator, and designer.">
+        <meta property="og:image" content="https://www.bran.organic/images/og.png">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.bran.organic/">
+        <meta property="theme-color" content="#6082ff">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Bryan Oh Chung | Portfolio">
+        <meta property="twitter:description" content="Hey! I'm Bryan—I'm a computer graphics student at the University of Pennsylvania, game developer, 3D artist/animator, and designer.">
+        <meta property="twitter:image" content="https://www.bran.organic/images/og.png">
+    </head>
+    <body>
+        <script type="importmap">
+            {
+                "imports":
+                {
+                    "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.min.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/"
+                }
+            }
+        </script>
+        <script type="module" src="js/script.js"></script>
+        <div id="top"></div>
+        <div class="bar-container">
+            <div class="bar">
+                <div class="bar-text">
+                    <a class="bar-link home" href="/" data-umami-event="home">BRYAN OH CHUNG</a>
+                    <a class="bar-link home-alt" href="/" data-umami-event="home">BRYAN</a>
+                    <div class="bar-link-group">
+                        <a class="bar-link" href="#projects" data-umami-event="jump-projects">PROJECTS</a>
+                        <a class="bar-link" href="#art" data-umami-event="jump-art">ART</a>
+                        <a class="bar-link" href="#design" data-umami-event="jump-design">DESIGN</a>
+                        <a class="bar-link" href="resume.pdf" target="_blank" data-umami-event="resume">RESUME</a>
+                    </div>
+                </div>
+                <div class="bar-bar"></div>
+            </div>
+        </div>
+        <div class="block-intro-container">
+            <div class="block-intro">
+                <div class="intro">
+                    <div class="intro-title">
+                        Hey!<br>I'm Bryan—
+                    </div>
+                    <div class="intro-title alt">
+                        Hey! I'm Bryan—
+                    </div>
+                    <div class="intro-copy">
+                        <b>I'm a student at the University of Pennsylvania studying computer science and&nbsp;graphics.</b>
+                        <br>In my free time, I develop games, make art and animated shorts, and design stuff. You can check out my projects in detail below, or play the games I've released&nbsp;<a class="intro-body-link" href="https://organicbran.itch.io/" target="_blank" data-umami-event="itch">here</a>.
+                    </div>
+                    <div class="socials">
+                        <a href="mailto:bryanohchung@gmail.com" target="_blank" class="social-link" data-umami-event="email">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                                <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                            </svg>
+                            <div class="social-link-text">Email</div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bryanohchung" target="_blank" class="social-link" data-umami-event="linkedin">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            <div class="social-link-text">LinkedIn</div>
+                        </a>
+                        <a href="https://www.instagram.com/bryanohchung" target="_blank" class="social-link" data-umami-event="instagram">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <div class="social-link-text">Instagram</div>
+                        </a>
+                        <a href="https://github.com/organicbran" target="_blank" class="social-link" data-umami-event="github">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <div class="social-link-text">GitHub</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero"></div>
+                <video class="hero-video" loop playsinline muted crossorigin="anonymous" src="assets/ui.mp4"></video>
+            </div>
+        </div>
+        <div class="block-container">
+            <div class="block">
+                <div class="map">
+                    <div class="map-text">
+                        <div class="map-sub">
+                            <span class="clear">// PROJECT INFO</span>
+                            <div class="map-field">
+                                // ???
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <img class="map-layer hidden" src="images/modules/a.png">
+                        <img class="map-layer hidden" src="images/modules/b.png">
+                        <img class="map-layer hidden" src="images/modules/c.png">
+                        <img class="map-layer hidden" src="images/modules/d.png">
+                    </div>
+                    <div class="map-text">
+                        <div class="map-sub-stack">
+                            <div class="map-sub">
+                                <span class="clear">// WORKED ON</span>
+                                <div class="map-field"></div>
+                            </div>
+                        </div>
+                        <div class="map-sub-stack">
+                            <div class="map-sub">
+                                <span class="clear">// USED</span>
+                                <div class="map-field"></div>
+                            </div>
+                            <div class="map-sub hidden">
+                                <span class="clear">// WORKED WITH</span>
+                                <div class="map-field"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-container">
+                    <div id="projects"></div>
+                    <div class="section-header">
+                        projects
+                        <div class="section-header-corner"></div>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Möbelmon
+                            </div>
+                            <div class="project-sub">
+                                iOS GAME
+                                <br>JUL&nbsp;'22 - PRESENT
+                            </div>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/ikeamon1.jpg" alt="">
+                            <img class="project-image" src="images/ikeamon3.jpg" alt="">
+                            <img class="project-image" src="images/ikeamon2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            <b>The Swedish furniture-assembling creature-collecting game.</b>
+                            <br><br>
+                            Möbelmon is a full-fledged furniture-collecting action roguelike for iOS. Brave the world of impossibly-confusing instructions as you assemble unique Möbelmon, fight your way through over 30 levels, and defeat each boss to escape the warehouse.
+                            <br><br>
+                            This project started as a short web game, but quickly grew into a full-size project as I realized that a quick, easy-to-pickup roguelite would play perfectly on mobile. On the gameplay side of things, I wanted to design intuitive touch controls without using an on-screen joystick, to avoid clutter. In game, you can move, attack, charge your special attack, and dodge, all using one-finger gestures, meaning you can easily play one-handed. In build mode, you drag-and-drop parts into place to assemble your furniture, inspired by the (amazing) <i>Assemble with Care</i>.
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/ikeamon4.jpg" alt="">
+                            <img class="project-image" src="images/ikeamon5.jpg" alt="">
+                            <img class="project-image" src="images/ikeamon6.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            On the art side, I wanted a style with bright colors and noise/grain, (kind of) like a vintage furniture magazine ad from a certain Swedish company. I wrote my own custom toon shader with a grain transition between colors, as well as a light override value so that I can easily tweak an individual object's colors/lighting.
+                            <br><br>
+                            This project was also amazing animation practice! Although each Möbelmon shares the same animations, where they can only move/rotate/scale (except for bosses), it was incredibly fun giving them tiny bits of personality using squash and stretch, to make them feel slightly alive.
+                            <br><br>
+                            Finally, I implemented a modular UI system so that UI panels can be easily reused, and quickly connected to game logic. Every UI element in entire game uses consistent design language, and just like the furniture, has a tiny bit of squash and stretch applied to make it feel playful and snappy.
+                            <br><br>
+                            Coming (for real this time) very soon!
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// MÖBELMON</div>
+                            <div class="project-meta-work">GAMEPLAY PROGRAMMING*GAME & LEVEL DESIGN*ALL 3D ASSETS*CHARACTER ANIMATION*UI/UX & UI ANIMATION*SHADERS & FX*BRANDING ASSETS*TRAILER EDITING~*...EVERYTHING ELSE</div>
+                            <div class="project-meta-tools">UNITY + C#*SHADER GRAPH*BLENDER*PHOTOSHOP*ILLUSTRATOR</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">YYYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Valet
+                            </div>
+                            <div class="project-sub">
+                                ANIMATED SHORT
+                                <br>NOV&nbsp;'24 - PRESENT
+                            </div>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/valet1.jpg" alt="">
+                            <img class="project-image" src="images/valet2.jpg" alt="">
+                            <img class="project-image" src="images/valet3.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            Currently working on an animated short. Stills from character/lighting test.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// VALET</div>
+                            <div class="project-meta-work">DIRECTING*SCREENPLAY*STORYBOARDS*LAYOUT*CHARACTERS*RIGGING*ANIMATION*LIGHTING*ENVIRONMENTS*EDITING</div>
+                            <div class="project-meta-tools">BLENDER*SUBSTANCE PAINTER*PREMIERE PRO</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">NNNY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Descent
+                            </div>
+                            <div class="project-sub">
+                                WEB GAME
+                                <br>SEP&nbsp;'24 - DEC&nbsp;'24
+                            </div>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/descent1.jpg" alt="">
+                            <img class="project-image" src="images/descent2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            An endless snowboarding game down a procedurally-generated mountain. Created for Penn UPGRADE's PennBoy collection.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// DESCENT</div>
+                            <div class="project-meta-work">ART DIRECTION*SHADERS*CHARACTER MODELING*CHARACTER ANIMATION*UI DESIGN*GAME DESIGN*BRANDING ASSETS</div>
+                            <div class="project-meta-tools">UNITY + C#*SHADER GRAPH*BLENDER</div>
+                            <div class="project-meta-collaborators">~~~CHARLIE WANG*KEVIN WEI*ZACHARY LEONG</div>
+                            <div class="project-meta-modules">YYNY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Cooking with Gamsay
+                            </div>
+                            <div class="project-sub">
+                                WEB GAME
+                                <br>NOV&nbsp;'24
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="project-link" href="https://organicbran.itch.io/cooking-with-rordon-gamsay" target="_blank" data-umami-event="itch-gamsay">
+                                Play in browser
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0002 15.0001V9.00005M15.0002 9.00005H9.00019M15.0002 9.00005L9.00019 14.9999M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/gamsay1.jpg" alt="">
+                            <img class="project-image" src="images/gamsay2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            Jump around the kitchen, dodge Rordon's verbal attacks, and cook the perfect burger in time to win. Winner of the Penn UPGRADE Fall '24 Game Jam, and made entirely within 24 hours.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// COOKING WITH RORDON GAMSAY</div>
+                            <div class="project-meta-work">ART DIRECTION*SHADERS*CHARACTER MODELING*CHARACTER ANIMATION*LIGHTING*GAME DESIGN*PROGRAMMING</div>
+                            <div class="project-meta-tools">UNITY + C#*SHADER GRAPH*BLENDER</div>
+                            <div class="project-meta-collaborators">~~~CHARLIE WANG*KEVIN WEI*ZACHARY LEONG</div>
+                            <div class="project-meta-modules">YNYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                i'll walk, thanks
+                            </div>
+                            <div class="project-sub">
+                                WEB GAME
+                                <br>JUL&nbsp;'23
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="project-link" href="https://organicbran.itch.io/ill-walk-thanks" target="_blank" data-umami-event="itch-ill-walk-thanks">
+                                Play in browser
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0002 15.0001V9.00005M15.0002 9.00005H9.00019M15.0002 9.00005L9.00019 14.9999M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/illwalkthanks1.jpg" alt="">
+                            <img class="project-image" src="images/illwalkthanks2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            A reverse-snake game about dodging over-enthusiastic public transit. Made in 48 hours for GMTK Game Jam 2023. Was also my first time experimenting with a 3D pixel art style, inspired by <i>A Short Hike</i>—I render the entire scene to a low-res render texture, which is then a UI element that fills the entire screen.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// I'LL WALK, THANKS</div>
+                            <div class="project-meta-work">PROGRAMMING*GAME DESIGN*ASSET MODELING*SHADERS & FX*UI DESIGN</div>
+                            <div class="project-meta-tools">UNITY + C#*SHADER GRAPH*BLENDER</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">YNYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Bryiankart
+                            </div>
+                            <div class="project-sub">
+                                WEB GAME
+                                <br>JAN&nbsp;'23 - JUN&nbsp;'23
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="project-link" href="https://organicbran.itch.io/bryiankart" target="_blank" data-umami-event="itch-bryiankart">
+                                Play in browser
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0002 15.0001V9.00005M15.0002 9.00005H9.00019M15.0002 9.00005L9.00019 14.9999M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/bryiankart1.jpg" alt="">
+                            <img class="project-image" src="images/bryiankart2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            A kart racer featuring 3 custom-made tracks, item boxes, drift spark mechanics, customizable karts, split-screen multiplayer, a time trial mode, a "place" checkpoint gate system that takes being lapped into account, an 8-player map, full controller support, a "fishing" respawn animation, and up to 7 AI-controlled opponent racers (with adjustable difficulty) trained by a neural network on each track. You can also play as a horse.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// BRYIANKART</div>
+                            <div class="project-meta-work">PROGRAMMING*TRACK DESIGN*ENVIRONMENTS*UI DESIGN*FX</div>
+                            <div class="project-meta-tools">UNITY + C#*BLENDER</div>
+                            <div class="project-meta-collaborators">~~IAN MCDANIEL*BRIAN KOH</div>
+                            <div class="project-meta-modules">YNYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Smog City
+                            </div>
+                            <div class="project-sub">
+                                WEB GAME
+                                <br>MAY&nbsp;'23
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="project-link" href="https://organicbran.itch.io/smog-city" target="_blank" data-umami-event="itch-smog-city">
+                                Play in browser
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0002 15.0001V9.00005M15.0002 9.00005H9.00019M15.0002 9.00005L9.00019 14.9999M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/smogcity1.jpg" alt="">
+                            <img class="project-image" src="images/smogcity2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            An educational game about environmental policy decisions, inspired by Reigns. Made for the interactive component of a group chemistry project.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// SMOG CITY</div>
+                            <div class="project-meta-work">PROGRAMMING*GAME DESIGN*ASSET MODELING*UI/UX DESIGN</div>
+                            <div class="project-meta-tools">UNITY + C#*BLENDER*ILLUSTRATOR</div>
+                            <div class="project-meta-collaborators">~~~BRANDON PENG*LIA SHEPLER*ROHAN DHILLON</div>
+                            <div class="project-meta-modules">YYYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Lakeside Guesser
+                            </div>
+                            <div class="project-sub">
+                                WEB GAME
+                                <br>DEC&nbsp;'22
+                            </div>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/guesser1.jpg" alt="">
+                            <img class="project-image" src="images/guesser2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            A school location-guessing web game, inspired by GeoGuessr. Features a 3D interactive map made with Three.js, custom lightweight card CSS animations, server-side scoring, 50+ unique locations/images, and a global leaderboard.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// LAKESIDE GUESSER</div>
+                            <div class="project-meta-work">PROGRAMMING*UI/UX DESIGN*ASSET MODELING</div>
+                            <div class="project-meta-tools">HTML & CSS*JAVASCRIPT*THREE.JS*FLASK*MYSQL</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">NYYN</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Cirrus
+                            </div>
+                            <div class="project-sub">
+                                WEB GAME
+                                <br>MAY&nbsp;'22
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a class="project-link" href="https://organicbran.itch.io/cirrus" target="_blank" data-umami-event="itch-cirrus">
+                                Play in browser
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0002 15.0001V9.00005M15.0002 9.00005H9.00019M15.0002 9.00005L9.00019 14.9999M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-image-grid">
+                            <img class="project-image" src="images/cirrus1.jpg" alt="">
+                            <img class="project-image" src="images/cirrus2.jpg" alt="">
+                        </div>
+                        <div class="project-body">
+                            An endless action-platformer where you build the level, then defend it from waves of enemies.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// CIRRUS</div>
+                            <div class="project-meta-work">PROGRAMMING*GAME DESIGN*ASSET MODELING*SHADERS & FX*UI DESIGN</div>
+                            <div class="project-meta-tools">UNITY + C#*BLENDER</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">YNYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                bran.organic
+                            </div>
+                            <div class="project-sub">
+                                YOU'RE HERE
+                                <br>DEC&nbsp;'24
+                            </div>
+                        </div>
+                        <div class="art-image-row">
+                            <div class="art-image-sub-stack">
+                                <img class="art-image" src="images/siteblender.jpg" alt="">
+                                <div class="art-image-sub">
+                                    Modeling and texturing
+                                </div>
+                            </div>
+                            <div class="art-image-sub-stack">
+                                <img class="art-image" src="images/siteaftereffects.jpg" alt="">
+                                <div class="art-image-sub">
+                                    Display UI animation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            Personal portfolio site—featuring an unfortunately not-real product design. An AO map is doing most of the heavy lifting on the model lighting-wise, along with a normal map for the engraved button text. (There's also a super subtle roughness map for a metal grain-look when light hits at the right angle.) Screens are UV-unwrapped separately from the rest of the model, and play a video texture (with custom motion graphics done in After Effects) mapped onto the model.
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// BRAN.ORGANIC</div>
+                            <div class="project-meta-work">DESIGN*CODE*ASSET MODELING*TEXTURING*MOTION GRAPHICS</div>
+                            <div class="project-meta-tools">HTML & CSS*JAVASCRIPT*THREE.JS*BLENDER*SUBSTANCE PAINTER*PHOTOSHOP*ILLUSTRATOR*AFTER EFFECTS</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">NYYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="spacer"></div>
+                    <div id="art"></div>
+                    <div class="section-header">
+                        art
+                        <div class="section-header-corner"></div>
+                    </div>
+                    <div class="project">
+                        <div class="art-image-grid">
+                            <div class="art-image-row">
+                                <img class="art-image" src="images/art/stall.jpg" alt="">
+                                <img class="art-image" src="images/art/neon.jpg" alt="">
+                            </div>
+                            <div class="art-image-row">
+                                <img class="art-image" src="images/art/diner.jpg" alt="">
+                                <img class="art-image" src="images/art/greenhouse.jpg" alt="">
+                            </div>
+                            <div class="art-image-row">
+                                <img class="art-image" src="images/art/room.jpg" alt="">
+                                <img class="art-image" src="images/art/greenhousewide.jpg" alt="">
+                            </div>
+                            <img class="art-image" src="images/art/guitar.jpg" alt="">
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// RENDERS</div>
+                            <div class="project-meta-work">MODELING*TEXTURING*LIGHTING*COMPOSITING</div>
+                            <div class="project-meta-tools">BLENDER*CYCLES*SUBSTANCE*PAINTER*MAYA</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">NNNYY</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="spacer"></div>
+                    <div id="design"></div>
+                    <div class="section-header">
+                        design
+                        <div class="section-header-corner"></div>
+                    </div>
+                    <div class="project">
+                        <div class="art-image-grid design">
+                            <div class="art-image-sub-stack">
+                                <div class="art-image-row">
+                                    <img class="art-image" src="images/design/deck1.jpg" alt="">
+                                    <img class="art-image" src="images/design/deck2.jpg" alt="">
+                                </div>
+                                <div class="art-image-sub">
+                                    Doomsday playing cards
+                                </div>
+                            </div>
+                            <div class="art-image-sub-stack">
+                                <img class="art-image" src="images/design/numidian.jpg" alt="">
+                                <div class="art-image-sub">
+                                    School yearbook cover
+                                </div>
+                            </div>
+                            <div class="art-image-sub-stack">
+                                <img class="art-image" src="images/design/tote.jpg" alt="">
+                                <div class="art-image-sub">
+                                    School merch design
+                                </div>
+                            </div>
+                            <div class="art-image-row">
+                                <div class="art-image-sub-stack">
+                                    <img class="art-image" src="images/design/tatler.jpg" alt="">
+                                    <div class="art-image-sub">
+                                        Newspaper special issue cover
+                                    </div>
+                                </div>
+                                <div class="art-image-sub-stack">
+                                    <img class="art-image" src="images/design/mayday.jpg" alt="">
+                                    <div class="art-image-sub">
+                                        School festival promo
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// DESIGN WORK</div>
+                            <div class="project-meta-work">GRAPHIC DESIGN*PRODUCT DESIGN*ILLUSTRATION*LAYOUT*COLOR</div>
+                            <div class="project-meta-tools">ILLUSTRATOR*PHOTOSHOP*INDESIGN*BLENDER</div>
+                            <div class="project-meta-collaborators"></div>
+                            <div class="project-meta-modules">NYNNY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="50" height="50" viewBox="0 0 223.27 288">
+                        <path d="M85.1,125.84l2.89-.77c2.57-.69,3.85-1.35,3.85-4.67s-1.28-3.29-3.85-2.61l-2.89.77c-1.02.27-1.61.96-1.61,2.03v4.07c0,1.07.59,1.45,1.61,1.18Z"/>
+                        <path d="M92.27,134.51c0-2.51-1.18-2.57-3.75-1.89l-3.48.93c-1.02.27-1.61.96-1.61,2.03v2.46c0,1.07.59,1.45,1.61,1.18l3.37-.9c2.57-.69,3.85-1.3,3.85-3.81Z"/>
+                        <path d="M203.17,41.44l-136.01,36.53c-3.44.92-5.83,4.04-5.83,7.6v194.55c0,5.18,4.92,8.96,9.93,7.61l120.99-32.49c10.34-2.78,17.53-12.15,17.53-22.85V46.51c0-3.45-3.27-5.96-6.61-5.07ZM137.1,108.37c0-6.74,1.07-14.2,13.11-17.42,12.04-3.23,13.11,3.66,13.11,10.4v22.69c0,1.18-.53,1.96-1.6,2.25l-5.99,1.61c-1.02.27-1.6-.11-1.6-1.18v-4.65c0-1.07-.53-1.46-1.61-1.18l-4.6,1.23c-1.02.27-1.6.97-1.6,2.04v4.65c0,1.07-.54,1.75-1.61,2.04l-5.99,1.61c-1.02.27-1.61-.21-1.61-1.39v-22.69ZM159.28,158.02c0,4.61-3.74,9.35-8.35,10.58-4.61,1.24-8.35-1.5-8.35-6.11s3.74-9.35,8.35-10.58c4.61-1.24,8.35,1.5,8.35,6.11ZM105.65,105.51c0-.96.7-1.85,1.66-2.1l11.72-3.14c9.52-2.55,13.38.48,13.38,9.26,0,4.98-1.23,8.78-4.07,11.58-.21.22-.27.5-.16.74l5.67,9.02c.75,1.19-.11,2.92-1.77,3.36l-6.1,1.63c-.53.14-1.02,0-1.23-.42l-5.56-9.26c-.11-.13-.27-.2-.43-.15l-2.14.57c-.96.26-1.66,1.14-1.66,2.1v8.45c0,.96-.7,1.85-1.66,2.1l-5.99,1.61c-.96.26-1.66-.25-1.66-1.21v-34.14ZM126.1,175.96c0,4.61-3.74,9.35-8.35,10.58-4.61,1.24-8.35-1.5-8.35-6.11s3.74-9.35,8.35-10.58c4.61-1.24,8.35,1.5,8.35,6.11ZM74.29,148.1v-34.19c0-1.07.53-1.75,1.61-2.09l11.24-3.01c10.06-2.7,13.91.34,13.91,9.11,0,1.82-.53,5.49-2.73,8.49,2.19.43,3.8,2.67,3.8,5.99,0,6.63-2.94,10.63-13,13.33l-13.22,3.54c-1.02.27-1.61-.16-1.61-1.18ZM185.24,181.31c-1.5,15.21-9.46,30.23-21.02,41.45-.62.61-.99,1.43-.99,2.3v3.65c0,1.41-.95,2.65-2.31,3.01l-50.44,13.51c-1.32.35-2.61-.64-2.61-2v-3.69c0-.61-.37-1.15-.93-1.39-12.12-5.24-20.31-16.78-21.24-32.22-.1-1.73,1.01-3.29,2.68-3.74l45.1-12.08c-.01-.18-.03-.36-.03-.55,0-4.61,3.74-9.35,8.35-10.58,4.61-1.24,8.35,1.5,8.35,6.11,0,.19-.02.38-.03.57l30.56-8.19c2.45-.66,4.8,1.33,4.56,3.86ZM196.87,115.26c0,1.02-.54,1.75-1.6,2.04l-7.87,2.11c-.91.24-1.5.03-1.87-.73l-7.28-15.87c-.21-.42-.64-.2-.64.33v17.28c0,1.02-.54,1.75-1.61,2.04l-5.99,1.61c-1.02.27-1.61-.16-1.61-1.18v-34.24c0-1.07.59-1.76,1.61-2.03l7.87-2.11c.91-.24,1.5-.03,1.87.73l7.28,15.87c.21.42.64.2.64-.33v-17.28c0-1.07.59-1.76,1.6-2.04l5.99-1.61c1.07-.29,1.6.1,1.6,1.17v34.24Z"/>
+                        <path d="M147.91,112.91l4.6-1.23c1.07-.34,1.61-1.02,1.61-2.09v-5.78c0-2.57-.37-3.75-3.91-2.81-3.53.95-3.91,2.33-3.91,4.9v5.83c0,1.02.59,1.45,1.6,1.17Z"/>
+                        <path d="M116.61,117.39l2.73-.73c2.57-.69,3.85-1.35,3.85-4.67s-1.28-3.29-3.85-2.61l-2.73.73c-.96.26-1.66,1.14-1.66,2.1v3.96c0,.96.7,1.47,1.66,1.21Z"/>
+                        <path d="M216.6.18L82.61,35.3c-4.51,1.18-8.27,4.3-10.26,8.51l-11.56,19.2c-1.45,3.06,1.34,6.41,4.61,5.56l136.74-35.84c4.51-1.18,8.26-4.3,10.25-8.51l10.35-16.63c1.93-4.08-1.78-8.55-6.15-7.41Z"/>
+                        <path d="M45.69,77.83l-27.01-7.55c-3.34-.93-6.66,1.58-6.66,5.05v192.04c0,7.04,4.69,13.22,11.47,15.11l17.94,5.01c5.03,1.4,10-2.37,10-7.59V85.41c0-3.53-2.35-6.63-5.75-7.58ZM19.23,146.66l9.36-13.7c1.41-2.06,4.52-1.85,5.64.38l9.84,19.69c1.18,2.35-.98,4.99-3.52,4.31l-19.28-5.16c-2.4-.64-3.45-3.47-2.05-5.52ZM40.57,180.75l-19.53-5.23c-1.58-.42-2.67-1.85-2.67-3.49,0-2.37,2.25-4.1,4.54-3.49l19.53,5.23c1.58.42,2.67,1.85,2.67,3.49,0,2.37-2.25,4.1-4.54,3.49ZM40.57,169.05l-19.53-5.23c-1.58-.42-2.67-1.85-2.67-3.49,0-2.37,2.25-4.1,4.54-3.49l19.53,5.23c1.58.42,2.67,1.85,2.67,3.49,0,2.37-2.25,4.1-4.54,3.49Z"/>
+                        <path d="M42.44,44.42c-1.9-4.69-5.92-8.21-10.83-9.46l-24.75-6.33c-4.36-1.12-8.14,3.21-6.45,7.38l8.63,16.04c1.9,4.69,5.92,8.2,10.83,9.46l27.3,6.98c3.31.85,6.17-2.43,4.89-5.59l-9.61-18.47Z"/>
+                    </svg>
+                </div>
+                <div class="socials footer-socials">
+                    <a href="mailto:bryanohchung@gmail.com" target="_blank" class="social-link footer-socials" data-umami-event="email">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                        </svg>
+                        <div class="social-link-text">Email</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bryanohchung" target="_blank" class="social-link footer-socials" data-umami-event="linkedin">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <div class="social-link-text">LinkedIn</div>
+                    </a>
+                    <a href="https://www.instagram.com/bryanohchung" target="_blank" class="social-link footer-socials" data-umami-event="instagram">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        <div class="social-link-text">Instagram</div>
+                    </a>
+                    <a href="https://github.com/organicbran" target="_blank" class="social-link footer-socials" data-umami-event="github">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <div class="social-link-text">GitHub</div>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <a class="footer-link" href="#top" data-umami-event="jump-top">Back to top</a>
+                    <br>
+                    All work is © 2025 Bryan Chung.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
