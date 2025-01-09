@@ -11,16 +11,24 @@ html
 {
     scroll-padding-top: 75px;
     scroll-behavior: smooth;
+    font-synthesis: none;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body
 {
-    background: var(--blue);
+    background-color: var(--blue);
     color: var(--black);
     margin: 0px;
     padding: 0px;
     font-family: "tenon", sans-serif;
+    font-weight: 400;
     min-width: 350px;
+}
+
+body.alt
+{
+    background-color: var(--white);
 }
 
 .bar-container
