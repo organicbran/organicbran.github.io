@@ -12,7 +12,6 @@ html
     scroll-padding-top: 75px;
     scroll-behavior: smooth;
     font-synthesis: none;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body
