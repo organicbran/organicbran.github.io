@@ -42,6 +42,31 @@ body
     color: #F8E9DF;
 }
 
+#socials
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 0px;
+}
+
+.social-icon
+{
+    color: #F8E9DF;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    transition: color 0.15s linear;
+}
+
+.social-icon:hover
+{
+    color: #D5C9C3;
+}
+
 #footer
 {
     height: 50px;
