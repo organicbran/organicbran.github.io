@@ -40,7 +40,7 @@ body.alt
     align-items: center;
     z-index: 1;
     top: 0;
-    transition: background-color 0.15s linear;
+    transition: background-color 0.15s cubic-bezier(0.45, 0, 0.55, 1);
     min-width: 350px;
 }
 
@@ -89,7 +89,7 @@ body.alt
     font-size: 15px;
     font-family: "cartograph-cf", monospace;
     font-weight: 400;
-    transition: color 0.15s linear;
+    transition: color 0.15s cubic-bezier(0.45, 0, 0.55, 1);
     text-wrap: nowrap;
 }
 
@@ -208,7 +208,7 @@ body.alt
     gap: 4px;
     font-size: 19px;
     font-weight: 500;
-    transition: color 0.15s linear;
+    transition: color 0.15s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .social-link:hover
@@ -238,7 +238,7 @@ body.alt
     font-weight: 500;
     color: var(--black);
     text-decoration: none;
-    transition: color 0.15s linear;
+    transition: color 0.15s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .intro-body-link:hover
@@ -317,12 +317,12 @@ body.alt
     position: absolute;
     width: 100%;
     opacity: 100%;
-    transition: opacity 0.25s linear;
+    transition: opacity 0.3s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .map-layer.hidden
 {
-    opacity: 15%;
+    opacity: 10%;
 }
 
 .map-text
@@ -480,7 +480,7 @@ body.alt
     gap: 4px;
     font-size: 16px;
     font-weight: 500;
-    transition: color 0.15s linear;
+    transition: color 0.15s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .project-link:hover
@@ -516,7 +516,7 @@ body.alt
     font-weight: 500;
     color: var(--black);
     text-decoration: underline;
-    transition: color 0.15s linear;
+    transition: color 0.15s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .body-link:hover
@@ -626,7 +626,7 @@ body.alt
     font-weight: 500;
     color: var(--white);
     text-decoration: none;
-    transition: color 0.15s linear;
+    transition: color 0.15s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .footer-link:hover
