@@ -26,9 +26,9 @@ if (touchControls) {
     controls.enablePan = false;
     controls.enableZoom = false;
     controls.enableRotate = true;
-    controls.rotateSpeed = 0.4;
+    controls.rotateSpeed = 0.3;
     controls.enableDamping = true;
-    controls.dampingFactor = 0.05;
+    controls.dampingFactor = 0.07;
     controls.maxAzimuthAngle = rotationAngle;
     controls.minAzimuthAngle = -rotationAngle;
     controls.maxPolarAngle = Math.PI / 2 + rotationAngle;
