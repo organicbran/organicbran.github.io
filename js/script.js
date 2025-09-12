@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const scene = new THREE.Scene();
 const container = document.getElementsByClassName("hero")[0];
@@ -14,6 +15,26 @@ renderer.toneMapping = THREE.NoToneMapping;
 renderer.toneMappingExposure = 1;
 container.appendChild(renderer.domElement);
 
+const rotationAngle = Math.PI / 5;
+const pointerRotationSmooth = 12;
+
+let touchControls = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+const controls = new OrbitControls( camera, renderer.domElement );
+controls.enabled = touchControls;
+if (touchControls) {
+    controls.enablePan = false;
+    controls.enableZoom = false;
+    controls.enableRotate = true;
+    controls.rotateSpeed = 0.25;
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.maxAzimuthAngle = rotationAngle;
+    controls.minAzimuthAngle = -rotationAngle;
+    controls.maxPolarAngle = Math.PI / 2 + rotationAngle;
+    controls.minPolarAngle = Math.PI / 2 - rotationAngle;
+}
+
 const environment = new RoomEnvironment();
 const pmremGenerator = new THREE.PMREMGenerator( renderer );
 
@@ -25,8 +46,14 @@ const loader = new GLTFLoader();
 loader.load( '/assets/handheld.glb', function (gltf) {
     scene.add(gltf.scene);
     model = gltf.scene.children[0];
-    model.rotation.y = -0.4;
-    model.rotation.x = -0.25;
+
+    if (touchControls) {
+        model.rotation.y = 0;
+        model.rotation.x = 0;
+    } else {
+        model.rotation.y = -0.4;
+        model.rotation.x = -0.25;
+    }
 
     let body = model.children[0];
     let display = model.children[1];
@@ -41,6 +68,9 @@ loader.load( '/assets/handheld.glb', function (gltf) {
 });
 
 camera.position.z = 9.75;
+if (touchControls) {
+    controls.update();
+}
 
 let mouseX = 0;
 let mouseY = 0;
@@ -55,16 +85,15 @@ window.addEventListener('pointermove', function (e) {
     mouseY = Math.max(Math.min((e.clientY / window.innerHeight) * -2 + 1, 1), -1);
 });
 
-const rotationSmooth = 12;
-const rotationAngle = Math.PI / 5;
-
 const clock = new THREE.Clock();
 let deltaTime = 0;
 function animate() {
-    if (model != null && mouseMoved) {
+    if (touchControls) {
+        controls.update();
+    } else if (model != null && mouseMoved) {
         deltaTime = Math.min(clock.getDelta(), 1/30);
-        model.rotation.y = THREE.MathUtils.lerp(model.rotation.y, mouseX * rotationAngle, rotationSmooth * deltaTime);
-        model.rotation.x = THREE.MathUtils.lerp(model.rotation.x, mouseY * -rotationAngle, rotationSmooth * deltaTime);
+        model.rotation.y = THREE.MathUtils.lerp(model.rotation.y, mouseX * rotationAngle, pointerRotationSmooth * deltaTime);
+        model.rotation.x = THREE.MathUtils.lerp(model.rotation.x, mouseY * -rotationAngle, pointerRotationSmooth * deltaTime);
     }
     renderer.render(scene, camera);
 

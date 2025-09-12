@@ -254,6 +254,11 @@ body.alt
     touch-action: none;
 }
 
+.hero:hover
+{
+    cursor: grab;
+}
+
 .hero-video
 {
     position: absolute;
