@@ -57,7 +57,7 @@
                     </div>
                     <div class="intro-copy">
                         <b>I'm a student at the University of Pennsylvania studying computer science and&nbsp;graphics.</b>
-                        <br>I previously interned as a 3D artist at EA, and I make games and design things. You can see my work in detail below, or play my iOS game&nbsp;<a class="intro-body-link" href="https://www.bran.organic/mobelmon" target="_blank" data-umami-event="mobelmon">here</a>.
+                        <br>I make games and design things, and was previously a 3D artist intern at EA. You can see my work in detail below, or play my newest release&nbsp;<a class="intro-body-link" href="https://www.bran.organic/mobelmon" target="_blank" data-umami-event="mobelmon">here</a>.
                     </div>
                     <div class="socials">
                         <a href="mailto:bryanohchung@gmail.com" target="_blank" class="social-link" data-umami-event="email">
@@ -129,10 +129,38 @@
                 <div class="main-container">
                     <div id="projects"></div>
                     <div class="section-header">
-                        projects
-                        <div class="section-header-corner"></div>
+                        PROJECTS
                     </div>
                     <div class="spacer"></div>
+                    <div class="project">
+                        <div class="project-header">
+                            <div class="project-title">
+                                Mini Minecraft
+                            </div>
+                            <div class="project-sub">
+                                CIS 4600
+                                <br>NOV&nbsp;'25 - DEC&nbsp;'25
+                            </div>
+                        </div>
+                        <div class="project-image-grid">
+                            <iframe class="project-video" width="630" height="354" src="https://www.youtube.com/embed/QdRux1v67jY?si=9j8ymxoldO8HQRXz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="project-body">
+                            Custom 3D voxel game engine written in C++ and OpenGL, and final project for CIS 4600 (Interactive Computer Graphics) at Penn. Includes efficient block and terrain chunk rendering, ambient occlusion, a dynamic skybox, and ambient light color contribution to block faces.
+                        </div>
+                        <div class="art-image-grid">
+                            <img loading="lazy" class="project-image" src="images/minecraft1.jpg" alt="">
+                            <img loading="lazy" class="project-image" src="images/minecraft2.jpg" alt="">
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-meta-title">// MINI MINECRAFT</div>
+                            <div class="project-meta-work">TERRAIN CHUNKS*BLOCK CULLING*TEXTURES*AMBIENT LIGHT*DYNAMIC SKYBOX*WATER/TRANSPARENCY*POST-PROCESS COLOR</div>
+                            <div class="project-meta-tools">C++*OPENGL*GLSL</div>
+                            <div class="project-meta-collaborators">~~~CHARLIE WANG*SARAH JAMAL</div>
+                            <div class="project-meta-modules">NNYN</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
                     <div class="project">
                         <div class="project-header">
                             <div class="project-title">
@@ -157,27 +185,16 @@
                             <img loading="lazy" class="project-image" src="images/ikeamon2.jpg" alt="">
                         </div>
                         <div class="project-body">
-                            <b>The Swedish furniture-assembling creature-collecting game.</b>
-                            <br><br>
-                            Möbelmon is a full-fledged furniture-collecting action roguelike for iOS. Brave the world of impossibly-confusing instructions as you assemble unique Möbelmon, fight your way through over 30 levels, and defeat each boss to escape the warehouse.
-                            <br><br>
-                            This project started as a short web game, but quickly grew into a full-size project as I realized that a quick, easy-to-pickup roguelite would play perfectly on mobile. On the gameplay side of things, I wanted to design intuitive touch controls without using an on-screen joystick, to avoid clutter. In game, you can move, attack, charge your special attack, and dodge, all using one-finger gestures, meaning you can easily play one-handed. In build mode, you drag-and-drop parts into place to assemble your furniture, inspired by the (amazing) <i>Assemble with Care</i>.
+                            Möbelmon is a furniture-collecting action roguelike for iOS and Android, out now in beta. Features unique furniture to assemble and collect, challenging bosses, over 30 unique levels, and intuitive one-finger touch controls.
                         </div>
                         <div class="project-image-grid">
                             <img loading="lazy" class="project-image" src="images/ikeamon4.jpg" alt="">
                             <img loading="lazy" class="project-image" src="images/ikeamon5.jpg" alt="">
                             <img loading="lazy" class="project-image" src="images/ikeamon6.jpg" alt="">
                         </div>
-                        <div class="project-body">
-                            On the art side, I wanted a style with bright colors and noise/grain, (kind of) like a vintage furniture magazine ad from a certain Swedish company. I wrote my own custom toon shader with a grain transition between colors, as well as a light override value so that I can easily tweak an individual object's colors/lighting.
-                            <br><br>
-                            This project was also amazing animation practice! Although each Möbelmon shares the same animations, where they can only move/rotate/scale (except for bosses), it was incredibly fun giving them tiny bits of personality using squash and stretch, to make them feel slightly alive.
-                            <br><br>
-                            Finally, I implemented a modular UI system so that UI panels can be easily reused, and quickly connected to game logic. Every UI element in entire game uses consistent design language, and just like the furniture, has a tiny bit of squash and stretch applied to make it feel playful and snappy.
-                        </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// MÖBELMON</div>
-                            <div class="project-meta-work">GAMEPLAY PROGRAMMING*GAME & LEVEL DESIGN*ALL 3D ASSETS*CHARACTER ANIMATION*UI/UX & UI ANIMATION*SHADERS & FX*BRANDING ASSETS*TRAILER EDITING~*...EVERYTHING ELSE</div>
+                            <div class="project-meta-work">GAMEPLAY PROGRAMMING*GAME & LEVEL DESIGN*ALL 3D ASSETS*CHARACTER ANIMATION*UI/UX & UI ANIMATION*SHADERS & FX*BRANDING ASSETS~*EVERYTHING ELSE</div>
                             <div class="project-meta-tools">UNITY + C#*SHADER GRAPH*BLENDER*PHOTOSHOP*ILLUSTRATOR</div>
                             <div class="project-meta-collaborators"></div>
                             <div class="project-meta-modules">YYYY</div>
@@ -233,7 +250,7 @@
                             <img loading="lazy" class="project-image" src="images/gamsay2.jpg" alt="">
                         </div>
                         <div class="project-body">
-                            Jump around the kitchen, dodge Rordon's verbal attacks, and cook the perfect burger in time to win. Winner of the Penn UPGRADE Fall '24 Game Jam, and made entirely within 24 hours.
+                            Platformer about dodging Rordon's verbal attacks and cooking the perfect burger. Made in 24 hours and winner of Penn UPGRADE's Fall '24 Game Jam.
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// COOKING WITH RORDON GAMSAY</div>
@@ -267,7 +284,7 @@
                             <img loading="lazy" class="project-image" src="images/illwalkthanks2.jpg" alt="">
                         </div>
                         <div class="project-body">
-                            A reverse-snake game about dodging enthusiastic public transit. Made solo, in 48 hours, for GMTK Game Jam 2023. This was also my first time experimenting with a 3D pixel art style, inspired by <i>A Short Hike</i>—along with custom toon shaders, I'm rendering the entire scene to a low-res render texture.
+                            Reverse-snake game, made in 48 hours for the 2023 GMTK Game Jam. Features a 3D pixel art style with custom toon shaders.
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// I'LL WALK, THANKS</div>
@@ -301,7 +318,7 @@
                             <img loading="lazy" class="project-image" src="images/bryiankart2.jpg" alt="">
                         </div>
                         <div class="project-body">
-                            A kart racer featuring 3 custom-made tracks, item boxes, drift spark mechanics, customizable karts, split-screen multiplayer, a time trial mode, a "place" checkpoint gate system that takes being lapped into account, an 8-player map, full controller support, a "fishing" respawn animation, and up to 7 AI-controlled opponent racers (with adjustable difficulty) trained by a neural network on each track. You can also play as a horse.
+                            Kart racer featuring 3 custom tracks, split-screen multiplayer, controller support, and neural network-trained AI opponents.
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// BRYIANKART</div>
@@ -335,7 +352,7 @@
                             <img loading="lazy" class="project-image" src="images/smogcity2.jpg" alt="">
                         </div>
                         <div class="project-body">
-                            An educational game about environmental policy decisions, inspired by Reigns. Made for the interactive component of a group chemistry project.
+                            Educational game about environmental policy, inspired by Reigns.
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// SMOG CITY</div>
@@ -361,7 +378,7 @@
                             <img loading="lazy" class="project-image" src="images/guesser2.jpg" alt="">
                         </div>
                         <div class="project-body">
-                            A school location-guessing web game, inspired by GeoGuessr. Features a 3D interactive map made with Three.js, custom lightweight card CSS animations, server-side scoring, 50+ unique locations/images, and a global leaderboard.
+                            Location-guessing web game, inspired by GeoGuessr. Features a 3D interactive map, server-side scoring, and a global leaderboard.
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// LAKESIDE GUESSER</div>
@@ -395,7 +412,7 @@
                             <img loading="lazy" class="project-image" src="images/cirrus2.jpg" alt="">
                         </div>
                         <div class="project-body">
-                            An endless action-platformer where you build the level, then defend it from waves of enemies.
+                            Endless action-platformer where you build the level, then defend it from waves of enemies.
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// CIRRUS</div>
@@ -431,7 +448,7 @@
                             </div>
                         </div>
                         <div class="project-body">
-                            Personal portfolio site—featuring an unfortunately not-real product design. An AO map is doing most of the heavy lifting on the model lighting-wise, along with a normal map for the engraved button text. (There's also a super subtle roughness map for a metal grain-look when light hits at the right angle.) Screens are UV-unwrapped separately from the rest of the model, and play a video texture (with custom motion graphics done in After Effects) mapped onto the model.
+                            Personal portfolio site.
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// BRAN.ORGANIC</div>
@@ -445,15 +462,11 @@
                     <div class="spacer"></div>
                     <div id="art"></div>
                     <div class="section-header">
-                        art
-                        <div class="section-header-corner"></div>
+                        ART
                     </div>
                     <div class="project">
                         <div class="art-image-grid">
-                            <div class="art-image-row">
-                                <img loading="lazy" class="art-image" src="images/valet1.jpg" alt="">
-                                <img loading="lazy" class="art-image" src="images/valet2.jpg" alt="">
-                            </div>
+                            <img loading="lazy" class="art-image" src="images/art/robots.jpg" alt="">
                             <div class="art-image-row">
                                 <img loading="lazy" class="art-image" src="images/art/stall.jpg" alt="">
                                 <img loading="lazy" class="art-image" src="images/art/neon.jpg" alt="">
@@ -480,8 +493,7 @@
                     <div class="spacer"></div>
                     <div id="design"></div>
                     <div class="section-header">
-                        design
-                        <div class="section-header-corner"></div>
+                        DESIGN
                     </div>
                     <div class="project">
                         <div class="art-image-grid design">
@@ -497,27 +509,18 @@
                             <div class="art-image-sub-stack">
                                 <img loading="lazy" class="art-image" src="images/design/numidian.jpg" alt="">
                                 <div class="art-image-sub">
-                                    School yearbook cover
+                                    Yearbook jacket
                                 </div>
                             </div>
                             <div class="art-image-sub-stack">
                                 <img loading="lazy" class="art-image" src="images/design/tote.jpg" alt="">
-                                <div class="art-image-sub">
-                                    School merch design
-                                </div>
                             </div>
                             <div class="art-image-row">
                                 <div class="art-image-sub-stack">
                                     <img loading="lazy" class="art-image" src="images/design/tatler.jpg" alt="">
-                                    <div class="art-image-sub">
-                                        Newspaper special issue cover
-                                    </div>
                                 </div>
                                 <div class="art-image-sub-stack">
                                     <img loading="lazy" class="art-image" src="images/design/mayday.jpg" alt="">
-                                    <div class="art-image-sub">
-                                        School festival promo
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -575,7 +578,7 @@
                 <div class="footer-text">
                     <a class="footer-link" href="#top" data-umami-event="jump-top">Back to top</a>
                     <br>
-                    All work is © 2025 Bryan Chung.
+                    All work is © 2026 Bryan Chung.
                 </div>
             </div>
         </div>
