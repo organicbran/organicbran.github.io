@@ -27,6 +27,14 @@ body
     gap: 15px;
 }
 
+#background
+{
+    position: fixed;
+    inset: 0;
+    background: url("/images/mobelmon/teaser.jpg") center / cover no-repeat;
+    z-index: -1;
+}
+
 #logo
 {
     color: #F8E9DF;
