@@ -506,6 +506,13 @@ body.alt
     cursor: zoom-in;
 }
 
+.project-video
+{
+    width: 100%;
+    min-width: 100px;
+    border-radius: 10px;
+}
+
 .project-body
 {
     font-size: 18px;
