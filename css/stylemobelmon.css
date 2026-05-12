@@ -2,51 +2,44 @@ body
 {
     margin: 0px;
     padding: 0px;
-    background-color: #272842;
+    background-color: #0079e0;
 }
 
 #container
 {
     display: flex;
-    width: 100svw;
-    height: 100svh;
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 #main
 {
+    padding-top: 50px;
     display: flex;
-    height: 100svh;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
-#background
+.hero-logo
 {
-    position: fixed;
-    inset: 0;
-    background: url("/images/mobelmon/teaser.jpg") center / cover no-repeat;
-    z-index: -1;
+    width: 500px;
 }
 
-#logo
-{
-    color: #F8E9DF;
-    margin-top: 20px;
-}
-
-#hero
+.hero-copy
 {
     font-family: "Karla", sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-    font-style: italic;
+    width: 380px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
     color: #F8E9DF;
 }
 
@@ -61,30 +54,110 @@ body
     row-gap: 0px;
 }
 
-.social-icon
+.social-link
 {
     color: #F8E9DF;
     text-decoration: none;
-    width: 30px;
-    height: 30px;
     transition: color 0.15s linear;
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: -20px;
 }
 
-.social-icon:hover
+.social-link:hover
 {
     color: #D5C9C3;
 }
 
+.copy-link
+{
+    color: #F8E9DF;
+    text-decoration: none;
+    transition: color 0.15s linear;
+    font-family: "Karla", sans-serif;
+}
+
+.copy-link:hover
+{
+    color: #D5C9C3;
+}
+
+.block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.image-grid
+{
+    width: 770px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.screenshot
+{
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.copy
+{
+    font-family: "Karla", sans-serif;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8E9DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.copy-title
+{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.features
+{
+    text-align: left;
+    margin: 0px;
+    line-height: 120%;
+}
+
 #footer
 {
-    height: 50px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "Karla", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8E9DF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#logo
+{
     color: #F8E9DF;
 }
