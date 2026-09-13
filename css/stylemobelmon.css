@@ -111,6 +111,11 @@ body
     border-radius: 10px;
 }
 
+img
+{
+    height: auto;
+}
+
 .copy
 {
     font-family: "Karla", sans-serif;
