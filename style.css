@@ -909,6 +909,11 @@ ul
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .home-project
+    {
+        padding: 20px;
+    }
+
     .home-project.empty
     {
         display: none;
