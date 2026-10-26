@@ -7,6 +7,7 @@ document.addEventListener("click", (e) => {
 
     const src = image.dataset.full || image.src;
     lightboxImage.src = src;
+    lightboxImage.classList.toggle("no-shadow", image.classList.contains("no-shadow"));
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
