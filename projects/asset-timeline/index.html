@@ -6,6 +6,7 @@
         <meta property="og:url" content="https://www.bran.organic/projects/asset-timeline/">
         <meta property="og:title" content="Asset Timeline | Bryan Oh Chung">
         <meta property="twitter:title" content="Asset Timeline | Bryan Oh Chung">
+        <meta name="description" content="Case study of a new flow to track game development assets and large art files, designed for teams of artists.">
 
         <link rel="icon" type="image/png" href="/icon.png">
         <link rel="stylesheet" type="text/css" href="/style.css">
@@ -98,20 +99,23 @@
                             </div>
                         </div>
                         <div class="divider"></div>
+                        
                         <div class="image-row">
                             <div class="image-sub-stack">
                                 <img loading="lazy" width="1920" height="1080" class="image-expandable" src="/projects/asset-timeline/thumb.jpg" alt="">
                             </div>
                         </div>
                         <div class="project-body">
-                            This is Asset Timeline, a new flow for managing art assets for game engines, designed for large teams of artists who want greater control over tracking their creative processes over time.
+                            This is Asset Timeline, a new flow for managing art assets for game engines. It's designed for large teams of artists, who want greater control over tracking the creative process.
                             <br><br>
-                            This case study was very directly inspired by my personal experience in using game engines and a variety of art software, and finding the repeated pain point of having to juggle different file types, huge commit sizes, and sharing files with other artists while keeping them in version control.
+                            This case study was very directly inspired by my personal experience in using game engines and a variety of art software.
+                            I kept running into the pain points of having to juggle different file types, huge commit sizes, and other artists needing my files, and I wanted to experiment with a new way to visualize the game art workflow.
+                            Here's what that process looked like!
                         </div>
                         <div class="image-sub-stack">
                             <img loading="lazy" width="1920" height="1520" class="image-expandable no-shadow" src="/projects/asset-timeline/finals.png" alt="">
                             <div class="image-sub">
-                                Final pages and product mockups
+                                Final screens and mockups
                             </div>
                         </div>
 
@@ -122,22 +126,20 @@
                             <div class="divider"></div>
                         </div>
                         <div class="project-body">
-                            I started this study with significant research with past art team members as well as other artists working on game projects:
+                            I started this study by doing user studies with past art team members, as well as other game artists:
                             I knew my workflow and its shortcomings well but wanted to see which problems were universal, and which were possibly quirks unique to myself.
-                            <br><br>
-                            I found a high level of disconnect between artists working on the same team, even if using the same art software.
-                            I initially aimed my solution to be a new flow for art software itself, where artists could share layers of their own work, however after receiving more feedback on issues with versioning itself, I pivoted to designing a file tracker app with greater scope.
+                            In my conversations I found a high level of disconnect between artists working on the same team, even if using the same art software.
                         </div>
                         <div class="image-sub-stack">
                             <img loading="lazy" width="1920" height="1080" class="image-expandable no-shadow" src="/projects/asset-timeline/studywireframe.png" alt="">
                             <div class="image-sub">
-                                User research notes and very early wireframe for another app type
+                                User study notes and early wireframes experimenting with timeline direction
                             </div>
                         </div>
                         <div class="project-body">
                             The disconnect between artists became a problem specifically when submitting work and keeping track of multiple versions of specific assets (where version control would instead show the history of the entire project).
                             The other main emergent problem was having to track both art source files (a Photoshop file) and game asset files (the image used in-game, exported from Photoshop).
-                            Version control would not distinguish between these files: source files were large and cumbersome, while game asset files were the ones that needed more precise version tracking (as they actually appear in the final build).
+                            Version control couldn't distinguish between these files: source files were large and cumbersome, while game asset files were the ones that needed more precise version tracking (as they actually appear in the final build).
                         </div>
 
                         <div class="subheader">
@@ -149,26 +151,29 @@
                         <div class="project-body">
                             The overall flow stayed similar throughout iteration: first, asset files are tied to source files.
                             Then, versions of asset files are displayed in a vertical timeline chronologically underneath their parent source file.
-                            This model was designed to fix my interviewees' primary issues of version control not distinguishing assets, and individual changes to files being difficult to find and track.
+                            This model was designed to fix my interviewees' primary issues of version control not distinguishing assets, and individual changes to files being difficult to isolate.
                             <br><br>
-                            On my earliest version, most of those I initially interviewed said the vertical timeline layout was intuitive enough but the asset cards were too spread out.
+                            On my earliest version, most of those I initially interviewed said the vertical layout was intuitive on first glance, but noted that the asset cards were too spread out.
                             In subsequent iterations I removed the arrows between cards unless there was a significant jump in time, and tightened overall spacing to match that of a desktop app for technical users.
-                            The detailed sidebar was a compromise between wanting to keep info centered on the asset cards themselves, but needing more room to work with to display adequate info to the user.
+                            The detailed sidebar was a compromise between wanting to keep info centered on the asset cards themselves, while needing more room to work with to display adequate info to the user.
                         </div>
                         <div class="image-sub-stack">
                             <img loading="lazy" width="1920" height="1080" class="image-expandable no-shadow" src="/projects/asset-timeline/earlyscreens.png" alt="">
                             <div class="image-sub">
-                                Early versions of timeline screens and asset cards
+                                Work-in-progress timeline screens and asset cards
                             </div>
                         </div>
                         <div class="project-body">
-                            Another point of feedback was on the timeline becoming overly cluttered: with a large number of assets being tracked, the number of individual assets versus their versions became difficult to distinguish.
+                            Another point of feedback was about the timeline becoming overly cluttered: with a large number of assets being tracked, the number of individual assets difficult to distinguish from their versions.
                             To solve this, I prototyped a collapsed view, which gives a better overall view of which assets end up in a build.
                         </div>
-                        <div class="image-row">
+                        <div class="image-sub-stack">
                             <video class="project-video" autoplay muted playsinline loop preload="auto">
                                 <source src="/projects/asset-timeline/timelineanim.mov" type="video/mp4"/>
                             </video>
+                            <div class="image-sub">
+                                Collapsing and expanding asset cards in the timeline view
+                            </div>
                         </div>
 
                         <div class="subheader">

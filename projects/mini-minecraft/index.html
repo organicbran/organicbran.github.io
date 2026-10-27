@@ -6,6 +6,7 @@
         <meta property="og:url" content="https://www.bran.organic/projects/mini-minecraft/">
         <meta property="og:title" content="Mini Minecraft | Bryan Oh Chung">
         <meta property="twitter:title" content="Mini Minecraft | Bryan Oh Chung">
+        <meta name="description" content="Custom 3D voxel game engine written in C++ and OpenGL.">
 
         <link rel="icon" type="image/png" href="/icon.png">
         <link rel="stylesheet" type="text/css" href="/style.css">
@@ -99,7 +100,7 @@
                         </div>
                         <div class="divider"></div>
                         <div class="image-row">
-                            <iframe class="project-video" src="https://www.youtube.com/embed/QdRux1v67jY?si=9j8ymxoldO8HQRXz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe class="project-video embed" src="https://www.youtube.com/embed/QdRux1v67jY?si=9j8ymxoldO8HQRXz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="project-body">
                             Custom 3D voxel game engine written in C++ and OpenGL. Final project for CIS 4600 (Interactive Computer Graphics) at Penn.
@@ -129,12 +130,15 @@
                         <div class="project-body">
                             In addition, each block type has an assigned roughness value, so we can control the strength of the ambient color term based on a block's material. For example, ice blocks pick up much more ambient sky color than surrounding stone. This also gives our water a subtle gradient depending on the view angle, and helps to keep it from looking too uniform across the surfaces of large bodies of water.
                             <br><br>
-                            This system is relatively simple, but, combined with some art direction, it gives us a convincing ambient sky lighting effect and helps our terrain to blend visually with the scene. You can play around with our sky shader <a class="body-link" href="https://www.shadertoy.com/view/wX3BDM" target="_blank" data-umami-event="mini-minecraft-shadertoy">here</a> or see the passes of our terrain shader below:
+                            This system is relatively simple, but, combined with some art direction, it gives us a convincing ambient sky lighting effect and helps our terrain to blend visually with the scene. You can play around with my sky shader <a class="body-link" href="https://www.shadertoy.com/view/wX3BDM" target="_blank" data-umami-event="mini-minecraft-shadertoy">here</a>.
                         </div>
-                        <div class="image-grid">
+                        <div class="image-sub-stack">
                             <video class="project-video" autoplay muted playsinline loop preload="auto">
                                 <source src="/projects/mini-minecraft/pipeline.mp4" type="video/mp4"/>
                             </video>
+                            <div class="image-sub">
+                                Block shader pipeline steps
+                            </div>
                         </div>
                         <div class="project-meta">
                             <div class="project-meta-title">// MINI MINECRAFT</div>
