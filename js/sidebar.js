@@ -1,4 +1,4 @@
-const typeInterval = 15;
+const typeInterval = 30;
 const typePauseInterval = 200;
 
 const projectDetails = document.getElementsByClassName("project-meta");
